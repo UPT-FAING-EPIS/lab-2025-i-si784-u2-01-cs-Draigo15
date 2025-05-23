@@ -16,13 +16,13 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0.x' # Usa la versión que tengas en tu proyecto
+          dotnet-version: '7.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore MyMath.sln
+        run: dotnet restore MyMath/MyMath.sln
 
       - name: Run tests with coverage
-        run: dotnet test --collect:"XPlat Code Coverage"
+        run: dotnet test MyMath/MyMath.sln --collect:"XPlat Code Coverage"
 
       - name: Install ReportGenerator
         run: dotnet tool install -g dotnet-reportgenerator-globaltool

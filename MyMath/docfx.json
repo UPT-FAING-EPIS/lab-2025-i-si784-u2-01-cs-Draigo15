@@ -27,7 +27,8 @@
     "overwrite": [],
     "dest": "_site",
     "globalMetadata": {
-      "_appTitle": "Documentación MyMath"
+      "_appTitle": "Documentación MyMath",
+      "_disableContribution": true
     },
     "markdownEngineName": "markdig"
   }
