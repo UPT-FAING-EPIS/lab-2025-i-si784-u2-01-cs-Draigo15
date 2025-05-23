@@ -1,0 +1,34 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "Math.Lib/Math.Lib.csproj" ],
+          "exclude": [ "**/bin/**", "**/obj/**" ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [ "**/*.md", "toc.yml" ]
+      },
+      {
+        "files": [ "api/**.yml" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "images/**" ]
+      }
+    ],
+    "overwrite": [],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Documentación MyMath"
+    },
+    "markdownEngineName": "markdig"
+  }
+}
